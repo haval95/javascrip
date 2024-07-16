@@ -21,18 +21,28 @@ let x = true;
 // console.log(typeof null);
 
 let b = 'haval';
-const a = 'haval';
+// const a = 'haval';
 
-console.log(b, a);
-console.log(typeof a, typeof b);
+// console.log(b, a);
+// console.log(typeof a, typeof b);
 
-b = 1;
+// b = 1;
 
-console.log(b, a);
-var c = 10;
-console.log(c);
+// console.log(b, a);
+// var c = 10;
+// console.log(c);
 
-let z, y;
+// let z, y;
 
-z = y = 10;
-console.log(z, y);
+// z = y = 10;
+// console.log(z, y);
+
+// const inYear = '10000';
+// console.log(Number(inYear) + 1);
+
+// console.log(String(z) + 'haval');
+
+console.log('10' - '5');
+console.log('haval' + 'h');
+
+console.log(1 + '1' - 1);
