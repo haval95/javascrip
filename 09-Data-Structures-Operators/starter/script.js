@@ -267,25 +267,153 @@ GOOD LUCK 😀
 */
 
 // 1
-for (const [goalNumber, playerName] of game.scored.entries()) {
-  console.log(`Goal:  ${goalNumber + 1}: `, 'by: ', playerName);
-}
+// for (const [goalNumber, playerName] of game.scored.entries()) {
+//   console.log(`Goal:  ${goalNumber + 1}: `, 'by: ', playerName);
+// }
 
-let total = 0;
-let odds = Object.values(game.odds);
-for (const data of odds) {
-  total += data;
-}
-console.log(total / odds.length);
+// let total = 0;
+// let odds = Object.values(game.odds);
+// for (const data of odds) {
+//   total += data;
+// }
+// console.log(total / odds.length);
 
-for (const [team, odd] of Object.entries(game.odds)) {
-  console.log(`Odd of victory ${game[team] ?? 'draw'} is:  `, odd);
-}
+// for (const [team, odd] of Object.entries(game.odds)) {
+//   console.log(`Odd of victory ${game[team] ?? 'draw'} is:  `, odd);
+// }
 
-let obj = {};
-for (const scorer of game.scored) {
-  console.log(scorer);
-  obj[scorer] = (obj[scorer] ?? 0) + 1;
-}
+// let obj = {};
+// for (const scorer of game.scored) {
+//   console.log(scorer);
+//   obj[scorer] = (obj[scorer] ?? 0) + 1;
+// }
 
-console.log(obj);
+// console.log(obj);
+
+// const orderedSets = new Set([
+//   'pasta',
+//   'pizza',
+//   'pizza',
+//   'risotoot',
+//   'pasta',
+//   'pizza',
+// ]);
+
+// console.log(orderedSets);
+
+// console.log(new Set('haval'));
+
+// console.log(orderedSets.size);
+
+const mainMenuData = ['pasta', 'pizza', 'pizza', 'risotoot', 'pasta', 'pizza'];
+
+// const mainDishes = new Set(mainMenuData);
+// console.log(mainDishes);
+
+// const mainDishesArray = [...mainDishes];
+// console.log(mainDishesArray);
+
+// const a = 'haval';
+
+// console.log(a.length);
+// console.log(new Set(a).size);
+
+// const rest = new Map();
+// rest.set('name', 'haval');
+// rest.set(1, 'budapest');
+// rest.set(2, 'pecs');
+
+// rest
+//   .set('menu', mainMenuData)
+//   .set('open', 11)
+//   .set('close', 12)
+//   .set(true, 'we are open');
+
+// console.log(rest);
+
+// console.log(rest.get(true));
+
+// console.log(rest.has(2));
+// console.log(rest.delete(2));
+// console.log(rest.delete(2));
+// console.log(rest.size);
+
+// const question = new Map([
+//   ['question', 'what is the most popular programming lang?'],
+//   [1, 'c'],
+//   [2, 'java'],
+//   [3, 'js'],
+//   ['correct', 3],
+//   [true, 'correct'],
+//   [false, 'try again'],
+// ]);
+
+// const answer = window.prompt('type');
+// console.log(question.get(question.get('correct') === Number(answer)));
+
+// const obj = {
+//   key1: 'value',
+//   key2: 'value2',
+//   key3: 'value3',
+//   key4: 'value4',
+// };
+
+// console.log(Object.entries(obj));
+
+// const newMap = new Map([...Object.entries(obj)]);
+// console.log(newMap);
+
+// for (const [key, value] of newMap) {
+//   console.log(key, value);
+// }
+
+const gameEvents = new Map([
+  [17, '⚽️ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽️ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽️ GOAL'],
+  [80, '⚽️ GOAL'],
+  [92, '🔶 Yellow card'],
+]);
+
+// Coding Challenge #3
+
+/* 
+Let's continue with our football betting app! This time, we have a map with a log of the events that happened during the game. The values are the events themselves, and the keys are the minutes in which each event happened (a football game has 90 minutes plus some extra time).
+
+1. Create an array 'events' of the different game events that happened (no duplicates)
+2. After the game has finished, is was found that the yellow card from minute 64 was unfair. So remove this event from the game events log.
+3. Print the following string to the console: "An event happened, on average, every 9 minutes" (keep in mind that a game has 90 minutes)
+4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
+      [FIRST HALF] 17: ⚽️ GOAL
+
+GOOD LUCK 😀
+*/
+
+// const mySet = new Set([...gameEvents.values()]);
+// const newEventsArr = [...mySet];
+// console.log(newEventsArr);
+
+// gameEvents.delete(64);
+// console.log(gameEvents);
+
+// console.log(90 / gameEvents.size);
+
+// for (const [key, value] of gameEvents) {
+//   console.log(
+//     key <= 45 ? `[FIRST HALF] ${key}: ` : `[Second Half] ${key}`,
+//     value
+//   );
+// }
+
+console.log('haval'.indexOf('va'));
+console.log('haval'.lastIndexOf('a'));
+
+const aaaa = 'haval';
+
+console.log(aaaa.replace('a', 'b'));
